@@ -1,19 +1,76 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-    <title>My App</title>
+    <title>Ark Education</title>
     <link rel="stylesheet" type="text/css" href="css/myapp.css">
-  </head>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
   <body>
-    <div id="header">
+      <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid hidden-menu">
+  <div class="row">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      					<a href="#" class="logo">
+						<img src="/images/arklogo3.png" alt="Ark Education">
+					</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+  
+    </div>
+
+    <div  class="navbar-collapse collapse" role="navigation" id="bs-example-navbar-collapse-1">
+        	{{{menu}}}
+    		<ul id="menu" class="navbar-left">
+                <li class="nav navbar-nav">Home</li>    
+                <li class="nav navbar-nav">Contacts</li>
+                <li class="nav navbar-nav">Sign in</li>
+                </ul>
+    		<div id="menu" class="nav narbar-nav navbar-right">
+             		<a href="/login">Sign In</a>
+
+    		</div>
+    </div>
+
+    </div>
+    </div>
+
+    </nav>
+    
+    <div class="container">
+
+    <div id="header" class="text-success">
         <h1>My Contacts</h1>
+
         <a href="#">Contact List</a> | <a href="#add">New Contact</a>
     </div>
     <br/>
     <div id="content">
       {{{body}}}
     </div>
-
+    </div>
     <script type="text/javascript" src="js/myapp.js"></script>
+            <script>
+
+    window.MathJax = {
+      tex2jax: {
+        inlineMath: [['$', '$'], ["\\(", "\\)"]],
+        processEscapes: true
+      },
+      "CHTML-preview": {
+        disabled: true
+      },
+    }
+    
+
+    </script>
+	<script src="js/MathJax/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"></script>
+
   </body>
 </html>

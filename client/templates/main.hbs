@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <title>Ark Education</title>
+    <link rel="stylesheet" type="text/css" href="css/myapp.css">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid hidden-menu">
+  <div class="row">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      					<a href="#" class="logo">
+						<img src="/images/arklogo3.png" alt="Ark Education">
+					</a>
+  
+    </div>
+    </div>
+    </div>
+    <div  class="navbar-collapse collapse" role="navigation" id="bs-example-navbar-collapse-1">
+        	{{{menu}}}
+    </div>
+    		<div id="menu" class="navbar-right">
+             		<a href="/login">SignIn</a>
+
+    		</div>
+
+
+    </nav>
+    
+    <div class="container">
+
+    <div id="header" class="text-success">
+        <h1>My Contacts</h1>
+        <a href="#">Contact List</a> | <a href="#add">New Contact</a>
+    </div>
+    <br/>
+    <div id="content">
+      {{{body}}}
+    </div>
+    </div>
+    <script type="text/javascript" src="js/myapp.js"></script>
+            <script>
+
+    window.MathJax = {
+      tex2jax: {
+        inlineMath: [['$', '$'], ["\\(", "\\)"]],
+        processEscapes: true
+      },
+      "CHTML-preview": {
+        disabled: true
+      },
+    }
+    
+
+    </script>
+	<script src="js/MathJax/MathJax.js?config=TeX-MML-AM_HTMLorMML-full"></script>
+
+  </body>
+</html>

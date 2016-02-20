@@ -29,13 +29,30 @@ if ('development' == app.get('env')) {
 }
 
 //connect to the db server:
-mongoose.connect('mongodb://localhost/MyApp');
+mongoose.connect('mongodb://root:wing0ng@localhost/MyApp');
 mongoose.connection.on('open', function() {
     console.log("Connected to Mongoose...");
 
     // check if the db is empty, if so seed it with some contacts:
     seeder.check();
 });
+
+//connect to mysql
+var mysql      = require('mysql');	
+var sqloption = {  
+	host     : 'localhost',
+	port     : '3306',
+	user     : 'alpha',
+	password : 'wing0ng',
+	database : 'ark'
+};
+
+	app.set("DB:pool",mysql.createPool(sqloption));
+
+	var pool = app.get("DB:pool");
+	pool.getConnection(function(err, db){
+		console.log("connected to MYSQL:", err);
+	});
 
 //routes list:
 routes.initialize(app);

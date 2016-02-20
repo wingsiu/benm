@@ -33,6 +33,13 @@ module.exports = function(grunt) {
                             path: 'client/requires/jquery/js/jquery.js',
                             exports: '$'
                         },
+                        bootstrap: {
+                            path: 'client/requires/bootstrap/js/bootstrap.js',
+                            exports: 'Bootstrap',
+                            depends: {
+                                jquery: '$'
+                            }
+                        },
                         underscore: {
                             path: 'client/requires/underscore/js/underscore.js',
                             exports: '_'
@@ -62,7 +69,7 @@ module.exports = function(grunt) {
                 },
                 options: {
                     transform: ['hbsfy'],
-                    external: ['jquery', 'underscore', 'backbone', 'backbone.marionette']
+                    external: ['jquery', 'underscore', 'backbone', 'backbone.marionette','bootstrap']
                 }
             },
             test: {
@@ -91,7 +98,13 @@ module.exports = function(grunt) {
         },
 
         concat: {
-            'build/<%= pkg.name %>.js': ['build/vendor.js', 'build/app.js']
+            'build/<%= pkg.name %>.js': ['build/vendor.js', 'build/app.js'],
+            styles: {
+            	    src: ['bower_components/bootstrap/dist/css/bootstrap.min.css','build/<%= pkg.name %>.css'],
+            	    dest:'build/<%= pkg.name %>.css'
+
+            }
+
         },
 
         copy: {

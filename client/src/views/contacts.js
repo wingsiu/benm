@@ -15,6 +15,7 @@ var itemView = Marionette.ItemView.extend({
     }
 });
 
+
 module.exports = CollectionView = Marionette.CollectionView.extend({
     initialize: function() {
         this.listenTo(this.collection, 'change', this.render);
