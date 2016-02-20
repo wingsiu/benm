@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # B.E.N.M Boilerplate
 
 Backbone.js, ExpressJS & node.js, MongoDB
@@ -85,3 +86,6 @@ Note:
     $ grunt test
 
 (will run all tests - both server and client)
+=======
+# benm
+>>>>>>> origin/master
