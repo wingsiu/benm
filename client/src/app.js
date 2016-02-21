@@ -13,7 +13,7 @@ menu.set({name:"Home"});
 var menus = new MenuCollection();
 //menus.add(menu);
 //menu.set({name:"Sign in"});
-menus.add([{name:"Home"},{name:"Students"},{name:"Class"},{name:"Timetable"},{name:"Sign Out"}]);
+menus.add([{name:"Home"},{name:"Students"},{name:"Class"},{name:"Timetable2"},{name:"Sign Out"}]);
 //menus.add([{name:"Home"}]);
 //menus.add([{name:"Home"},{name:"Sign Out"}]);
 console.log("Menu:" ,menus);
