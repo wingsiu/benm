@@ -2,7 +2,7 @@
   "name": "myapp",
   "description": "Boilerplate web app using node, express, mongodb, backbone, marionette.  Tooling includes Grunt, Bower, Browserify, etc.",
   "version": "0.0.1",
-  "author": "Jason Krol",
+  "author": "Alpha Ng",
   "repository": {
     "type": "git",
     "url": "https://github.com/wingsiu/benm.git"
